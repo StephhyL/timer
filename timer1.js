@@ -21,7 +21,7 @@ for (let i=0; i <= maxTime; i = i + 1000) { // increasing every second/1000ms
   argNumMs.forEach(num => {
     if (i === num) {
       setTimeout(() => {
-        process.stdout.write(`${i}:   .`);
+        process.stdout.write('\x07');
       }, i)
   }
   })
